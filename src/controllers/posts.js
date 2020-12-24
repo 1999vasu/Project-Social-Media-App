@@ -16,9 +16,7 @@ async function showAllPosts(query){
     const posts = await Posts.findAll({
         include: Users
     })
-
     return posts
-
 }
 
 module.exports ={

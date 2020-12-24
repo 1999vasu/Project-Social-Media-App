@@ -12,8 +12,23 @@ async function createUser(){
 
 }
 
+async function getUserById(id){
+    return await Users.findAll({
+        where: {id : id}
+    })
+}
+
+async function getUserByUsername(username){
+    return await Users.findAll({
+        where:{
+            username:username}
+    })
+}
+
 module.exports ={
-    createUser
+    createUser,
+    getUserById,
+    getUserByUsername
 }
 
 
