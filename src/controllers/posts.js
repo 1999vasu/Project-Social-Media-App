@@ -11,7 +11,7 @@ async function createNewPost(userId, title, body){
 
 }
 
-async function showAllPosts(query){
+async function getAllposts(query){
 
     const posts = await Posts.findAll({
         include: Users
@@ -21,7 +21,7 @@ async function showAllPosts(query){
 
 module.exports ={
     createNewPost,
-    showAllPosts
+    getAllposts
 }
 
 // Unit testing 
