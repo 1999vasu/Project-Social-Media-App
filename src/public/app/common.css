@@ -1,0 +1,23 @@
+#navbar {
+    position: sticky;
+    top: 0px;
+    background-color: #dee2e6;
+    z-index: 1;
+}
+
+#footer {
+    padding: 1rem;
+    position: sticky;
+    bottom: 0px;
+    background-color: #dee2e6;
+    z-index: 1;
+}
+
+#content{
+    height: 2000px;
+}
+
+#posts-container{
+    text-align: center;
+    justify-content: space-between;
+}
